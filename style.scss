@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 70px 50px 70px 70px 70px 70px 70px 70px;
+  grid-template-areas:
+    '. title title title .'
+    'area area area area area'
+    'fish fish percentage back lBracket'
+    'one two three plus rBracket'
+    'four five six minus sqrt'
+    'seven eight nine divide tan'
+    'zero cos sin multiply equal';
+  box-shadow: 5px 10px 10px 10px rgb(68, 62, 62);
+  border-radius: 15px;
+  transition: box-shadow 1s;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-image: url(../images/cool-background.png);
+}
+.container:hover {
+  box-shadow: 3px 5px 5px 5px rgb(68, 62, 62);
+}
+.btn {
+  border-radius: 10px;
+}
+.area {
+  outline: none;
+  border: 5px solid rgb(151, 142, 142);
+  border-radius: 10px;
+  font-size: 33px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.title {
+  grid-area: title;
+}
+.lBracket {
+  grid-area: lBracket;
+  background-color: #e0d9ec;
+}
+.rBracket {
+  grid-area: rBracket;
+}
+.sqrt {
+  grid-area: sqrt;
+}
+.tan {
+  grid-area: tan;
+}
+.sin {
+  grid-area: sin;
+}
+.cos {
+  grid-area: cos;
+}
+.area {
+  grid-area: area;
+  text-align: right;
+}
+.fish {
+  grid-area: fish;
+  background-color: #e0d9ec;
+}
+.percentage {
+  grid-area: percentage;
+  background-color: #e0d9ec;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.zero {
+  grid-area: zero;
+}
+.plus {
+  grid-area: plus;
+  background-color: #f7c86e;
+}
+.minus {
+  grid-area: minus;
+  background-image: linear-gradient(to right, #f7c86e, #f69377);
+}
+.divide {
+  grid-area: divide;
+  background-image: linear-gradient(to bottom, #f7c86e, #f69377);
+}
+.equal {
+  grid-area: equal;
+}
+.back {
+  grid-area: back;
+  background-color: #e0d9ec;
+}
+.multiply {
+  grid-area: multiply;
+  background-image: linear-gradient(to bottom, #f7c86e, #f69377);
+}
+body {
+  height: 100vh;
+}
+.main_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  background-image: linear-gradient(to right, #8a2387, #e94057, #f27121);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 40px 30px 40px 40px 40px 40px 40px 40px;
+    grid-template-areas:
+      '. title title title .'
+      'area area area area area'
+      'fish fish percentage back lBracket'
+      'one two three plus rBracket'
+      'four five six minus sqrt'
+      'seven eight nine divide tan'
+      'zero cos sin multiply equal';
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    h1 {
+      font-size: 20px;
+    }
+    .area {
+      outline: none;
+      border: 3px solid rgb(151, 142, 142);
+      border-radius: 10px;
+      font-size: 20px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+  }
+}

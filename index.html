@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="container">
+        <h1 class="title">MY CALCULATOR</h1>
+        <textarea readonly class="area" cols="30" rows="10"></textarea>
+        <button onclick="onebtn()" id="one" class="btn one">1</button>
+        <button onclick="twobtn()" class="btn two">2</button>
+        <button onclick="threebtn()" class="btn three">3</button>
+        <button onclick="fourbtn()" class="btn four">4</button>
+        <button onclick="fivebtn()" class="btn five">5</button>
+        <button onclick="sixbtn()" class="btn six">6</button>
+        <button onclick="sevenbtn()" class="btn seven">7</button>
+        <button onclick="eightbtn()" class="btn eight">8</button>
+        <button onclick="ninebtn()" class="btn nine">9</button>
+        <button onclick="zerobtn()" class="btn zero">0</button>
+        <button onclick="plusbtn()" class="btn plus">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button onclick="minusbtn()" class="btn minus">
+          <i class="fas fa-minus"></i>
+        </button>
+        <button onclick="dividebtn()" class="btn divide">
+          <i class="fas fa-divide"></i>
+        </button>
+        <button onclick="multiplybtn()" class="btn multiply">
+          <i class="fas fa-times"></i>
+        </button>
+        <button onclick="equalbtn()" class="btn equal">
+          <i class="fas fa-equals"></i>
+        </button>
+        <button onclick="del()" class="btn back">
+          <i class="fas fa-backspace"></i>
+        </button>
+        <button onclick="clearbtn()" class="btn fish">
+          <i class="fab fa-cuttlefish"></i>
+        </button>
+        <button onclick="percent()" class="btn percentage">
+          <i class="fa fa-percentage"></i>
+        </button>
+        <button onclick="lbracket()" class="btn lBracket">(</button>
+        <button onclick="rbracket()" class="btn rBracket">)</button>
+        <button onclick="sinbtn()" class="btn sin">sin</button>
+        <button onclick="cosbtn()" class="btn cos">cos</button>
+        <button onclick="sqrtbtn()" class="btn sqrt">sqrt</button>
+        <button onclick="tanbtn()" class="btn tan">tan</button>
+      </div>
+    </div>
+
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
